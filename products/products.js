@@ -14,7 +14,7 @@ const mensagemErroPreco = document.querySelector('#mensagemErroPreco');
 const mensagemErroMarca = document.querySelector('#mensagemErroMarca');
 const mensagemErroCategoria = document.querySelector('#mensagemErroCategoria');
 
-// Várivale para armazenar novos usuarios
+// Várivale para armazenar novos produtos
 let produtosLocais = [];
 
 //Função que irá fazer a requisição na API
@@ -50,8 +50,8 @@ function renderizarTela() {
         li.classList.add('product-card');
         
         //Lógica da imagem
-        // const imagemSrc = produtos.image || usuariosLocias.imagemLocal || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png';
-        const imagemSrc = produtos.images || usuariosLocias.imagemLocal || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png';
+        // const imagemSrc = produtos.image || produtosLocais.imagemLocal || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png';
+        const imagemSrc = produtos.images || produtosLocais.imagemLocal || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png';
 
         // Monta o HTML estruturado do cartão
         li.innerHTML = `
@@ -152,7 +152,7 @@ btnEnviar.addEventListener('click', async (event) => {
 
     // Pega a foto do input
     const arquivoImagem = input_imagem.files[0];
-    let urlImagemLocal = '';
+    let urlImagemLocal = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png';
 
     if (arquivoImagem) {
         // Cria um URL tempóraria para a imagem 

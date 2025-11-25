@@ -47,7 +47,7 @@ function renderizarTela() {
         // Lógica da imagem
         const nome = usuario.firstName;
         const estiloAvatar = 'bottts';
-        const avatarCustomizado = `https://api.dicebear.com/9.x/${estiloAvatar}/svg?seed=${nome}`;
+        const avatarCustomizado = usuario.imagemLocal || `https://api.dicebear.com/9.x/${estiloAvatar}/svg?seed=${nome}`;
         // const imagemSrc = usuario.image || usuario.imagemLocal || 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png';
 
         // 3. Monta o HTML Estruturado do Cartão
