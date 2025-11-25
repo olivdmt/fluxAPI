@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Usuários</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    
+    <div class="background-curvo estado-final-esquerda">
+        <header class="cabecalho">
+            <div class="logo-marca">
+                <img class="flux-icon" src="../assets/img/FLUX-03.png" alt="logomarca">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../users/users.html">Usuários</a></li>
+                    <li><a href="../products/products.html">Produtos</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="contents">
+            <!-- Usuários cadastrados-->
+            <div class="register-groups">
+                <div class="container-groups">
+                    <H2>Lista de Usuários</H2>
+                    <ul id="lista-usuarios">
+                        <ul></ul>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Formulário-->
+            <div class="formulario animacao-entrada" style="justify-content: flex-end; padding-right: 10%;">
+                <div class="container-forms">
+                    <h2>Cadastrar Usuários</h2>
+                    <form method="POST">
+                        <div class="input-group">
+                            <label for="nome">Nome</label>
+                            <input id="nome" type="text" placeholder="Digite o nome">
+                            <span class="mensagemErroNome"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input id="sobrenome" type="text" placeholder="Digite o sobrenome">
+                            <span class="mensagemErroSobrenome"></span>
+                            <span class="mensagemErroSobrenome"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="seu@email.com">
+                            <span class="mensagemErroEmail"></span>
+                            <span class="mensagemErroEmail"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="idade">Idade</label>
+                            <input type="number" name="idade" id="idade" placeholder="Sua idade">
+                            <span class="mensagemErroIdade"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="imagem">Foto de Perfil</label>
+                            <input type="file" id="imagem" class="input-file">
+                            <span class="mensagemErroImagem"></span>
+                        </div>
+                        <div class="input-group">
+                            <input id="btn-enviar" type="submit" value="Enviar" class="btn-send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script src="users.js"></script>
+</body>
+</html>
