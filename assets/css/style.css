@@ -102,13 +102,13 @@ body, html {
 }
 
 .logo-marca {
-    width: 10px;
+    width: 100px;
     display: flex;
     justify-content: center;
 }
 
 .logo-marca img {
-    max-width: 1300%;
+    max-width: 100%;
     height: auto;
     margin-left: 80px;
 }
@@ -571,3 +571,89 @@ h1 {
     box-shadow: 0 5px 15px rgba(255, 77, 77, 0.3);
 }
 
+/* ============================================
+------------------- MEDIA QUERIES --------------- 
+===============================================*/
+
+@media screen and (max-width: 900px00) {
+    .background-curvo {
+        background-position: bottom center;
+        background-size: 100% 200px;
+    }
+    
+    .cabecalho {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .links ul {
+        padding: 0;
+        flex-wrap:  wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .conteudo-group {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .hero {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .logo-marca img {
+        margin-left: 0;
+        max-width: 200px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-top: 20px;
+    }
+
+    .description {
+        margin-top: 20px;
+        font-size: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .botoes {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-send {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    .container-form {
+        padding: 25px;
+    }
+
+    .register-groups {
+        padding: 0 15px;
+    }
+
+    .grid-container, .grids-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
