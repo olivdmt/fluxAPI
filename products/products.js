@@ -62,11 +62,14 @@ function renderizarTela() {
 
                 <h3 class="card-title">${produtos.title}</h3>
                 <p class="card-description"> ${produtos.description} </p>
-                <p class="category">${produtos.brand}</p>
+                <div class="brandcategory">
+                <p class="brand">${produtos.brand}</p>
+                <p class="category">${produtos.category}</p>
+                </div>
 
                 <div class="card-badges">
                     <span class="badge-value"> $${produtos.price}</span>
-                    <span class="badge-id"> ${produtos.id}</span>
+                    <span class="badge-id"> ID: ${produtos.id}</span>
                 </div>
 
                 <button class="btn-delete-card" onclick="removerProduto(${produtos.id})">

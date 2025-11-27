@@ -3,7 +3,7 @@ const input_nome = document.querySelector('#nome');
 const input_sobrenome = document.querySelector('#sobrenome');
 const input_email = document.querySelector('#email');
 const input_idade = document.querySelector('#idade');
-const input_imagem = document.querySelector('#imagem'); // NOVO: Seletor da imagem
+const input_imagem = document.querySelector('#imagem'); 
 const btnEnviar = document.querySelector('#btn-enviar');
 const listaElemento = document.querySelector('#lista-usuarios');
 
@@ -112,7 +112,6 @@ btnEnviar.addEventListener('click', async (event) => {
         mensagemErroSobrenome.style.color = 'red';
         temErro = true;
     } else {
-        // 2. CORREÇÃO: Usar .textContent, não reatribuir a variável
         mensagemErroSobrenome.textContent = ''; 
     }
 

@@ -521,6 +521,14 @@ h1 {
     font-size: 0.85rem;
 }
 
+.brandcategory {
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
 .category {
     background-color: #e6f4ff;
     color: var(--btn);
@@ -529,6 +537,15 @@ h1 {
     font-weight: bold;
     font-size: 0.85rem;
 
+}
+
+.brand {
+    background-color: #e6f4ff;
+    color: #824dff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
 }
 
 .badge-value {
